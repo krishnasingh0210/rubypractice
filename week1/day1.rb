@@ -52,3 +52,10 @@ elsif oper == '/'
 else
   puts "Invalid operation"
 end
+
+#5 Split
+name="Krishna Singh"
+puts name.split
+
+#6 Maximum among 3
+
