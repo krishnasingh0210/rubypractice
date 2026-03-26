@@ -95,4 +95,5 @@ puts str.capitalize
 puts "Enter the string:"
 str=gets.chomp
 puts str.upcase
- puts "hello world"
+
+puts "End of day1"
