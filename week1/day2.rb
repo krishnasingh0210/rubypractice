@@ -44,5 +44,24 @@ size = arr.length
 end
 puts arr.inspect
 
-#5 
+#5 Square pattern
+puts "Enter the number of rows and columns for patterns: "
+n=gets.chomp.to_i
+1..n.times do
+  n.times do
+    print "* "
+  end  
+  puts " "
+end
 
+#6 Triangle Pattern
+puts "Enter the number for triangle:"
+n=gets.chomp.to_i
+(1..n).each do|i|
+  i.times do
+        print "* "
+  end  
+  puts " "
+end
+
+#7 
