@@ -97,5 +97,3 @@ str=gets.chomp
 puts str.upcase
 
 puts "End of day1"
-puts "hi"
-puts "bye"
