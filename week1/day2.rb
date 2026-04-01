@@ -64,4 +64,51 @@ n=gets.chomp.to_i
   puts " "
 end
 
-#7 
+#7 Zig Zag psttern
+n = 9   # width of pattern
+rows = 3
+
+for i in 1..rows
+  for j in 1..n
+
+    if ( (i + j) % 4 == 0 || (i == 2 && j % 4 == 0) )
+      print "*"
+    else
+      print " "
+    end
+
+  end
+  puts
+end
+
+#8 Inverted triangle
+
+puts "Enter the number for triangle:"
+n=gets.chomp.to_i
+n.downto(1) do|i|
+  i.times do
+        print "* "
+  end  
+  puts " "
+end
+
+#9 searching vovels
+puts "Enter the string for searching vovels:"
+str = gets.chomp
+count = 0
+str.each_char do |i|
+  if "aeiou".include?(i)
+    count+=1
+  end
+  end
+  puts "vovels:" "#{count}"
+
+  #10 using when 
+  variable=[1,2,3,4]
+  case variable.class
+  when Interger
+    puts "It is an interger"
+  else String
+    puts "It is an string"
+  end
+  
