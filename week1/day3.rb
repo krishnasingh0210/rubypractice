@@ -20,7 +20,7 @@ puts "The largest element in array is #{largest}"
 #3 Duplicates in an array
 arr=[1,2,1,4,4,7]
 arr.each do |i|
-    if arr.count(i)>1
+  if arr.count(i)>1
     puts i
   end
 end
@@ -79,3 +79,40 @@ s.name="Sahil"
 puts s.name
 
 #8 Polymorphism
+class Bird 
+  def fly 
+    puts "the birds fly"
+  end
+end
+class Sparrow < Bird
+  def fly
+    puts "the sparrow fly"
+  end
+end
+class Eagle < Bird
+  def fly 
+    puts "the eagle fly"
+  end
+end
+[Sparrow.new,Eagle.new].each do |bird|
+  bird.fly
+end
+
+#9 Abstraction using module
+#module==group of methods that do not create object and is used due to reusablity and multiple inheritance(ruby does not support multiple inheritance.
+module Vehical
+  def start
+    puts "Vehical starting..."
+  end
+end
+class Car 
+  include Vehical
+end
+Car.new.start
+
+#10 Singleton method
+obj=Object.new
+def obj.greet
+  puts "Hello world!"
+end
+obj .greet
