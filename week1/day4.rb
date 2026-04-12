@@ -83,4 +83,66 @@ words = ["I", "am", "Dudee", "cool"]
 grouped = words.group_by { |word| word.length }
 puts grouped
 
-#8 
+#8 Simple To-Do app
+task = []
+loop do 
+  puts"1. Add Task"
+  puts"2. View Task"
+  puts"3. Exit"
+  choice=gets.chomp.to_i
+  case choice
+  when 1 
+    puts"Enter the task:"
+    task << gets.chomp
+  when 2
+   puts task
+  when 3
+    break
+  else
+    puts "Invalid operation"
+  end
+end
+
+#9 Module (include) and (prepend==just like include but higher priority overrides class method in confilict)
+module Greet
+  def hello
+    puts "Hello from module"
+  end
+end
+class Person
+  prepend Greet 
+
+  def hello
+    puts "Hello from class"
+  end
+end
+
+p = Person.new
+p.hello
+=begin
+if there was include then
+module Greet
+  def hello
+    puts "Hello from module"
+  end
+end
+
+class Person
+  include Greet
+
+
+p = Person.new
+p.hello
+=end
+
+#10 Module (extent)
+module Greet
+  def hello
+    puts "Hello from module"
+  end
+end
+
+class Person
+  entent Greet
+end
+Person.hello
