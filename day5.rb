@@ -52,4 +52,4 @@ my_proc=proc{puts "Hi!"}
 my_proc.call
 
 #6
-puts "hi "
+puts "hello"
